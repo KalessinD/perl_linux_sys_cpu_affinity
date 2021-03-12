@@ -19,6 +19,16 @@ DEPENDENCIES
 
 There are no requirements from other Perl libs.
 
+DOCUMENTATION
+
+See the POD documentation. Viewable online at CPAN
+
+https://metacpan.org/pod/Linux::Sys::CPU::Affinity
+
+AUTHOR
+
+Chernenko Dmitriy <cdn@cpan.org>
+
 COPYRIGHT AND LICENCE
 
 Copyright (C) 2021 by dchernenko
