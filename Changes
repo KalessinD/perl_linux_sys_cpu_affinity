@@ -1,5 +1,8 @@
 Revision history for Perl extension Linux::Sys::CPU::Affinity.
 
+0.07  Thu Mar  12 2021
+    - fix issue with unknown license
+
 0.06  Thu Mar  12 2021
     - add dependencies from some Test::** packages
     - add gitlab resources
