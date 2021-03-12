@@ -354,6 +354,8 @@ PPCODE:
 void DESTROY (cpuset)
 PPCODE:
     Linux_Sys_CPU_Affinity *self = (Linux_Sys_CPU_Affinity *) SvUV(SvRV(ST(0)));
+    if (PL_dirty)
+        return;
     CPU_FREE(self->set);
     safefree(self);
     XSRETURN_UNDEF;
