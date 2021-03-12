@@ -1,5 +1,8 @@
 Revision history for Perl extension Linux::Sys::CPU::Affinity.
 
+0.10  Thu Mar  12 2021
+    - fix version in *.pm file
+
 0.09  Thu Mar  12 2021
     - use "safefree" to release memory
 
