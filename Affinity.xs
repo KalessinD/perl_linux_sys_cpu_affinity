@@ -251,14 +251,14 @@ OUTPUT:
     RETVAL
 
 
-SV* cpu_zero(cpuset)
+void cpu_zero(cpuset)
     Linux_Sys_CPU_Affinity *cpuset
 CODE:
     init_set(cpuset, NULL);
-    XSRETURN_UNDEF;
+    XSRETURN_EMPTY;
 
 
-SV* reset(cpuset, sv = &PL_sv_undef)
+void reset(cpuset, sv = &PL_sv_undef)
     Linux_Sys_CPU_Affinity *cpuset
     SV *sv
 PREINIT:
@@ -267,7 +267,7 @@ CODE:
     if (SvOK(sv))
         av = _extract_and_validate_av(sv);
     init_set(cpuset, av);
-    XSRETURN_UNDEF;
+    XSRETURN_EMPTY;
 
 
 IV cpu_isset (cpuset, cpu)
@@ -279,20 +279,20 @@ PPCODE:
     XSRETURN(1);
 
 
-IV cpu_set (cpuset, cpu)
+void cpu_set (cpuset, cpu)
     Linux_Sys_CPU_Affinity *cpuset
     UV cpu
 PPCODE:
     CPU_SET_S((uint32_t) cpu, cpuset->size, cpuset->set);
-    XSRETURN_UNDEF;
+    XSRETURN_EMPTY;
 
 
-IV cpu_clr (cpuset, cpu)
+void cpu_clr (cpuset, cpu)
     Linux_Sys_CPU_Affinity *cpuset
     UV cpu
 PPCODE:
     CPU_CLR_S((uint32_t) cpu, cpuset->size, cpuset->set);
-    XSRETURN_UNDEF;
+    XSRETURN_EMPTY;
 
 
 UV cpu_count(cpuset)
@@ -333,7 +333,7 @@ CODE:
         Perl_croak(pTHX_ (char *) SvPV_nolen(error));
     }
     RETVAL = get_cpus_from_cpuset(new_cpuset);
-    free(new_cpuset);
+    safefree(new_cpuset);
 OUTPUT:
     RETVAL
 
@@ -358,7 +358,7 @@ PPCODE:
         return;
     CPU_FREE(self->set);
     safefree(self);
-    XSRETURN_UNDEF;
+    XSRETURN_EMPTY;
 
 
 IV get_nprocs ()
