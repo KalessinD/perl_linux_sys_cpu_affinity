@@ -17,7 +17,7 @@ struct xs_state {
 
 typedef struct xs_state Linux_Sys_CPU_Affinity;
 
-int get_available_nprocs (void) {
+static inline int get_available_nprocs (void) {
 
     static int available_cpus_cnt = 0;
 
