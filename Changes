@@ -1,0 +1,23 @@
+Revision history for Perl extension Linux::Sys::CPU::Affinity.
+
+0.06  Thu Mar  12 2021
+    - add dependencies from some Test::** packages
+    - add gitlab resources
+
+0.05  Thu Mar  12 2021
+    - fix in POD; add test case to check memory leaks
+
+0.04  Thu Mar  12 2021
+    - some changes in POD, use inline functions in XS
+
+0.03  Thu Mar  11 2021
+    - some fixes in POD
+
+0.02  Thu Mar  11 2021
+    - add new methods: clone, get_affinity, cpu_equal,
+      cpu_and, cpu_xor, cpu_or, get_cpus, get_nprocs
+
+0.01  Sun Mar  7 2021
+    - initial version
+
+
