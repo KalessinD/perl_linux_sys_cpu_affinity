@@ -1,8 +1,10 @@
 Affinity.xs
 Changes
+lib/Linux/Sys/CPU/Affinity.pm
+LICENSE
 Makefile.PL
 MANIFEST
 README
-typemap
+README.md
 t/Linux-Sys-CPU-Affinity.t
-lib/Linux/Sys/CPU/Affinity.pm
+typemap
