@@ -1,5 +1,8 @@
 Revision history for Perl extension Linux::Sys::CPU::Affinity.
 
+0.13  2021 Dec 03
+    - adding MANIFEST.SKIP file
+
 0.12  2021 Dec 02
     - fix in meta-files
 

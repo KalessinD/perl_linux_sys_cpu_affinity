@@ -2,8 +2,12 @@ Affinity.xs
 Changes
 lib/Linux/Sys/CPU/Affinity.pm
 LICENSE
+Makefile
 Makefile.PL
 MANIFEST
+MANIFEST.SKIP
+META.json
+META.yml
 README
 README.md
 t/Linux-Sys-CPU-Affinity.t
