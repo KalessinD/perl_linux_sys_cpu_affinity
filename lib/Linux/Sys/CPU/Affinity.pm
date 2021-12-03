@@ -199,6 +199,10 @@ Returns the amount of available CPU cores (see detail in get_nprocs(3) Linux Man
 
 =cut
 
+=head1 LICENSE
+
+This module is distributed under terms of Artistic Perl 5 license.
+
 =head1 AUTHOR
 
 Chernenko Dmitriy <cdn@cpan.org>

@@ -129,3 +129,6 @@ Returns the amount of available CPU cores (see detail in get_nprocs(3) Linux Man
 
 ### AUTHOR
 Chernenko Dmitriy <cdn@cpan.org>
+
+### LICENSE
+This module is distributed under terms of Artistic Perl 5 license.

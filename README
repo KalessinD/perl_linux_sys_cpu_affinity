@@ -1,3 +1,4 @@
+
 Linux-Sys-CPU-Affinity
 =========================
 
@@ -29,10 +30,6 @@ AUTHOR
 
 Chernenko Dmitriy <cdn@cpan.org>
 
-COPYRIGHT AND LICENCE
+LICENSE
 
-Copyright (C) 2021 by dchernenko
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.26.1 or,
-at your option, any later version of Perl 5 you may have available.
+This module is distributed under terms of Artistic Perl 5 license.
